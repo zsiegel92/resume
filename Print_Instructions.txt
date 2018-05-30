@@ -1,0 +1,1 @@
+Open HTML in Chrome. Click “Print”, then “Print using System Dialog”. Select a custom paper size - for the current length, 9.5x22in was good. Set all margins to 0. This is for digital viewing.
