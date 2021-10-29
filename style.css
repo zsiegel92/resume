@@ -157,16 +157,16 @@ html, body {
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 15px 0 0;
+	padding: 5px 0 0;
 }
 
-section:first-child {
-	border-top: 0;
-}
+/*section:first-child {
+	border-top: 10px;
+}*/
 
-section:last-child {
+/*section:last-child {
 	padding: 15px 0 10px;
-}
+}*/
 
 .sectionTitle {
 	float: left;
@@ -175,7 +175,7 @@ section:last-child {
 
 .sectionContent {
 	float: right;
-	width: 87%;
+	width: 97%;
 	/*position: relative;*/
 }
 
@@ -232,7 +232,8 @@ p {
 	-webkit-column-count:3;
 	column-count:3;
 	margin-bottom: 20px;
-	font-size: 0.6em;
+	font-size: 0.8em;
+	column-gap:  1px;
 	color: #444;
 }
 
@@ -240,3 +241,12 @@ p {
 	margin-bottom: 3px;
 }
 
+.skilltype{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	display: inline-block;
+		/*width: 80px;*/
+	min-width:  4em;
+	/*font-size: 1.2em;*/
+	/*color: var(--accent-color);*/
+}
