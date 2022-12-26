@@ -1,21 +1,27 @@
-:root{
-    --accent-color: #721503;
-    --side-padding: 30px;
-    --top-padding: 10px;
-    --delete-margin: 0px;
-    --right-date-margin: 0px;
+:root {
+	--accent-color: #721503;
+	--side-padding: 30px;
+	--top-padding: 10px;
+	--delete-margin: 0px;
+	--right-date-margin: 0px;
 }
 
 @media print {
 	:root {
-/*		--side-padding: 0px;
+		/*		--side-padding: 0px;
 		--top-padding: 0px;
 		--delete-margin: -3px;
 		--right-date-margin: 2px;*/
 	}
-	h1, h2, h3, h4, h5 {
-	  page-break-after: avoid;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		page-break-after: avoid;
 	}
+
 	/*@page {
 	 	  size: A4;
  	}*/
@@ -37,17 +43,95 @@
 		 	}*/
 
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-	border:0;
-	font:inherit;
-	font-size:100%;
-	margin:0;
-	padding:0;
-	vertical-align:baseline;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
 }
 
 
@@ -58,14 +142,15 @@ article {
 	display: inline-block;
 	width: 100%;
 	/*color: red;*/
-/*	page-break-inside: avoid;
+	/*	page-break-inside: avoid;
 	break-inside: avoid;
 	position: relative;
 	width:100%;*/
 }
 
 
-html, body {
+html,
+body {
 	background: #181818;
 	font-family: 'Lato', helvetica, arial, sans-serif;
 	font-size: 16px;
@@ -141,7 +226,8 @@ html, body {
 	color: #444;
 }
 
-#contactDetails ul li a, a[href^=tel] {
+#contactDetails ul li a,
+a[href^=tel] {
 	color: #444;
 	text-decoration: none;
 	/*-webkit-transition: all .3s ease-in;
@@ -192,6 +278,7 @@ p {
 	margin-bottom: 10px;
 	color: #444;
 }
+
 .sectionContent p:not(.subDetails) {
 	/*text-align:justify;*/
 	font-size: 0.8em;
@@ -205,7 +292,7 @@ p {
 }
 
 
-.subDetails.date{
+.subDetails.date {
 	float: right;
 	margin-right: var(--right-date-margin);
 }
@@ -228,12 +315,12 @@ p {
 
 .keySkills {
 	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
 	margin-bottom: 20px;
-	font-size: 0.8em;
-	column-gap:  1px;
+	font-size: 0.75em;
+	column-gap: 1px;
 	color: #444;
 }
 
@@ -241,12 +328,13 @@ p {
 	margin-bottom: 3px;
 }
 
-.skilltype{
+.skilltype {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	display: inline-block;
-		/*width: 80px;*/
-	min-width:  4em;
+	/*width: 80px;*/
+	min-width: 4em;
+	font-size: 1.1em;
 	/*font-size: 1.2em;*/
 	/*color: var(--accent-color);*/
 }
