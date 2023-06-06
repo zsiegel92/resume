@@ -334,7 +334,7 @@ p {
 	display: inline-block;
 	/*width: 80px;*/
 	min-width: 4em;
-	font-size: 1.1em;
+	font-size: 1em;
 	/*font-size: 1.2em;*/
 	/*color: var(--accent-color);*/
 }
