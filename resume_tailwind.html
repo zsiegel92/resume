@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zach Siegel - Resume</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="favicons/favicon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="favicons/favicon-160.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="favicons/favicon-64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16.png"
+    />
+    <link rel="apple-touch-icon" href="favicons/favicon-57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/favicon-114.png"
+    />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/favicon-144.png"
+    />
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/favicon-120.png"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/favicon-180.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicons/favicon-144.png" />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for enhanced readability and aesthetics */
+      body {
+        line-height: 1.4;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          sans-serif; /* Helvetica-like */
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-style: italic;
+        border-bottom-width: 1px;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
+        color: #1f2937;
+        letter-spacing: 0.02em;
+      }
+
+      .job-title {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .company-info {
+        font-size: 0.75rem; /* Smaller company info */
+        font-style: italic;
+        color: #6b7280; /* Gray-500 */
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.2rem;
+      }
+
+      .job-description {
+        margin-top: 0.05rem; /* Reduced from 0.1rem */
+        font-size: 0.9rem;
+        color: #374151; /* Gray-700 */
+        margin-left: 1rem; /* Add indent for descriptions */
+      }
+
+      /* Increased paragraph spacing, tighter line height */
+      .experience-item p {
+        margin-bottom: 0.4rem; /* Reduced from 0.5rem to decrease vertical spacing */
+        line-height: 1.2; /* Tighter line height */
+      }
+
+      .tool-list {
+        font-size: 0.85rem;
+      }
+
+      .tool-list li {
+        display: inline-block; /* Make them inline */
+        margin-right: 0.5em; /* Space between items */
+      }
+
+      .tool-list li:not(:last-child)::after {
+        content: "•"; /* Bullet point separator */
+        margin-left: 0.5em;
+        color: #9ca3af; /* Gray-400 */
+      }
+
+      .hover-underline:hover {
+        text-decoration: underline;
+        color: #2563eb; /* Blue-600 */
+      }
+
+      .font-semibold {
+        font-weight: 500;
+      }
+
+      /* Smaller sections */
+      .concise-section .section-title {
+        font-size: 1.3rem; /* Increased from 1.2rem */
+        margin-bottom: 0.2rem;
+      }
+
+      .concise-section .job-title {
+        font-size: 0.9rem;
+      }
+
+      .concise-section .company-info {
+        font-size: 0.7rem;
+      }
+
+      .concise-section .job-description {
+        font-size: 0.8rem;
+      }
+
+      /* Modified job-header to control alignment */
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .job-header .job-title {
+        flex-grow: 0; /* Change from 1 to 0 to prevent title from expanding */
+        margin-right: 0.5rem; /* Some space between title and institution */
+      }
+
+      .job-header .company-info {
+        text-align: right; /* Right-align the dates */
+        flex-shrink: 0; /* Prevent date from shrinking */
+      }
+
+      /* Style for institution/major info */
+      .institution-info {
+        font-size: 0.75rem;
+        font-style: italic;
+        color: #6b7280;
+        flex-grow: 1; /* Allow institution info to take up available space */
+      }
+
+      /* Reduced section spacing */
+      section {
+        margin-bottom: 0.75rem; /* Reduced from 1rem */
+      }
+
+      /* Space between experience items */
+      .space-y-3 > * + * {
+        margin-top: 0.6rem; /* Reduced from 0.75rem */
+      }
+
+      /* Tool list grid layout */
+      .tool-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 0.25rem; /* Reduced gap between grid items */
+        margin-top: 0.5rem;
+      }
+
+      .tool-grid-item {
+        font-size: 0.85rem;
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tool-name {
+        font-size: 0.75rem; /* Smaller than before */
+        font-style: italic;
+      }
+
+      /* Style for bullet separators between tools */
+      .tool-separator::after {
+        content: "•";
+        color: #9ca3af; /* Gray-400 */
+        margin: 0 0.15rem; /* Reduced spacing around bullets */
+      }
+
+      /* Optimization section needs smaller text */
+      .tool-grid-item:nth-child(4) {
+        font-size: 0.8rem; /* Smaller category name for Optimization */
+      }
+
+      /* Communication section needs smaller text */
+      .tool-grid-item:nth-child(5) {
+        font-size: 0.8rem; /* Smaller category name for Communication */
+      }
+
+      /* Simplified header alignment */
+      .header-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 768px) {
+        .header-container {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; /* Center align items vertically */
+        }
+      }
+
+      .name-title {
+        margin-bottom: 0; /* Remove any bottom margin */
+      }
+
+      .name-title h1 {
+        margin-bottom: 0.25rem; /* Small space between name and subtitle */
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+
+      .contact-info p {
+        margin: 0.25rem 0; /* Equal spacing between contact items */
+        line-height: 1.4;
+      }
+
+      /* Ensure mobile alignment */
+      @media (max-width: 767px) {
+        .name-title,
+        .contact-info {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+
+      /* Style for summary points */
+      .summary-point {
+        font-weight: 600;
+        color: #4b5563; /* Gray-600 */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-12 p-10">
+      <!-- Increased padding -->
+      <!-- Header -->
+      <header class="mb-2">
+        <div class="header-container">
+          <div class="header-left">
+            <div class="name-title">
+              <h1 class="text-3xl font-extrabold tracking-tight">
+                Zach Siegel
+              </h1>
+              <h2 class="text-xl text-gray-600">
+                Software Engineering | AI | Data Science
+              </h2>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="contact-info">
+              <p>
+                <a
+                  class="text-blue-600 hover-underline"
+                  href="mailto:zachary.edmund.siegel@gmail.com"
+                  >zachary.edmund.siegel@gmail.com</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-blue-600 hover-underline"
+                  href="https://zsiegel92.github.io"
+                  >zsiegel92.github.io</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-blue-600 hover-underline"
+                  href="https://www.linkedin.com/in/zach-edmund-siegel"
+                  >linkedin.com/in/zach-edmund-siegel</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-1 text-md italic text-gray-500">
+          Passionate about optimization, automation, and statistics-driven
+          decision-making. Highly proficient with a variety of full-stack
+          application development tools that bring analysis to life.
+        </p>
+      </header>
+      <!-- Professional Experience -->
+      <section class="mb-1">
+        <!-- Reduced margin -->
+        <h3 class="section-title">Professional Experience</h3>
+        <div class="space-y-3">
+          <!-- Reduced spacing -->
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Full-Stack Data/AI Engineer</h4>
+              <p class="institution-info">Current AI | Walleye Capital</p>
+              <p class="company-info">March 2024 - Present</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point">End-to-end product stories</span> •
+              Deployed dozens of self-contained ETL pipelines, creating millions
+              of records per day. Wrote application-side event handlers to
+              create user content from new data. Wrote user-facing frontend
+              tools to consume new sources. All rigorously tested.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">NLP engineering</span> • Wrote and
+              rigorously evaluated dozens of generative AI pipelines. Built a
+              robust <i>named entity extraction and resolution</i> system used
+              in multiple unstructured-to-structured data pipelines that enabled
+              application features. Combined ranking, chunking, and retrieval
+              strategies to identify and generate content about developing
+              trends in real-time.
+            </p>
+            <p class="job-description">
+              <span class="summary-point"
+                >Tooling innovation & Software Rigor</span
+              >
+              • Maintained high test coverage and extended testing paradigms to
+              evaluate nondeterministic AI features. Created
+              "configuration-as-code" web scraping pipeline and agentic
+              generation system to generate thousands of unique scripts to
+              scrape data from different websites.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Software Engineer &amp; Data Scientist</h4>
+              <p class="institution-info">Capsida Biotherapeutics, Inc.</p>
+              <p class="company-info">January 2022 - March 2024</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point">Internal software platform</span> •
+              Led the development of a widely-used internal website running on
+              AWS using React and Django. Created and maintained testing suite
+              and documentation. Onboarded cross-functional contributors and
+              socialized adoption.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Lab automation & integration</span> •
+              Created and maintained data "plumbing" automations that connected
+              platforms and services, including: lab information database,
+              project management software, networked lab instruments, and
+              internal website server. Built a QR-based inventory update system.
+              Fully automated several lab instrument data ingest operations.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Stochastic modeling</span> • Created a
+              primate immunogenicity forecasting and decision-support tool using
+              stochastic modeling to anticipate spontaneous interruptions to
+              animal availability (a widespread challenge in biotech).
+              Fully-automated analysis pipeline makes increasingly precise
+              recommendations available to decision-makers as new assay results
+              are recorded in lab information database.
+            </p>
+            <p class="job-description">
+              <span class="summary-point"
+                >Scientific and cross-functional computation</span
+              >
+              • Deployed software to support: scheduling automation and
+              visualization; highly customized BI analyses; a pipeline for
+              long-running bioinformatics calculations; IP-related data mining
+              from unstructured data; automated "handoffs" across platforms;
+              integrations with lab robots.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">MBA Teaching Assistant</h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="company-info">2020 - 2021</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point">Teaching</span> • Taught "Data and
+              Analytics" to students in the full-time and fully-employed MBA
+              programs as part of PhD teaching requirements.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Learning innovation</span> • Built a
+              git deployment pipeline for learning material using JupyterHub.
+              MBA students clicked a "magic link" to access cloud-provisioned,
+              SSO-enabled compute environments. Prepared interactive
+              notebook-based Python and R material.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Freelance Software Development -->
+      <section class="mb-1 concise-section">
+        <h3 class="section-title">Freelance Software Development</h3>
+        <div class="space-y-3">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Automated Scheduling</h4>
+              <p class="institution-info">Sinai Temple</p>
+              <p class="company-info">2018, 2019</p>
+            </div>
+            <p class="job-description">
+              Automated and optimized scheduling Bar/Bar Mitzvah dates for ~130
+              students via mixed-integer linear programming.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Carpool Assignment Optimization</h4>
+              <p class="institution-info">GroupThere</p>
+              <p class="company-info">2017 - 2020</p>
+            </div>
+            <p class="job-description">
+              Launched a carpool optimization tool at grouptherenow.com.
+              Minimizes total drive-time sum across groups of 2-100. Configured
+              for organizations.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Community Safety Intervention Modeling</h4>
+              <p class="institution-info">LA Community Action Network</p>
+              <p class="company-info">2017</p>
+            </div>
+            <p class="job-description">
+              Re-implemented LAPD's "hotspot" generation algorithm. Compared
+              hotspots to historical arrest, citation, and crime report data
+              from the City of Los Angeles. Contributed results to the
+              community-generated report "Predictive Policing in Los Angeles".
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Supply Chain Forecasting, Automation, and Optimization
+              </h4>
+              <p class="institution-info">FactoryOfEverything</p>
+              <p class="company-info">2016 - 2017</p>
+            </div>
+            <p class="job-description">
+              Developed a model for purchasing, production, shipping, and
+              holding over a factory-warehouse-retail system. Forecasting using
+              classical signal processing, regression, and machine learning.
+              Implemented MVP in MATLAB.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="mb-1 concise-section">
+        <h3 class="section-title">Education</h3>
+        <div class="space-y-3">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">University of California, Los Angeles</h4>
+              <p class="institution-info">
+                MS - Operations Management. GPA 3.94
+              </p>
+              <p class="company-info">2019-2021</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Pomona College</h4>
+              <p class="institution-info">
+                BA - Mathematics, Computer Science minor. GPA 3.63
+              </p>
+              <p class="company-info">2010-2014</p>
+            </div>
+            <p class="job-description">
+              Awarded "
+              <span class="font-semibold"
+                >Llewellyn Bixby Mathematics Prize</span
+              >" 2014: to the student with highest achievement in the
+              Mathematics department.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Research -->
+      <section class="mb-1 concise-section">
+        <h3 class="section-title">Research</h3>
+        <div class="space-y-3">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Pandemic Mitigation Optimization</h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="company-info">2021</p>
+            </div>
+            <p class="job-description">
+              Optimizes decisions that affect compartment flow parameters in
+              discrete-time SIRD disease progression model.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Fairness, Efficiency, and Feature-Awareness
+              </h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="company-info">2020</p>
+            </div>
+            <p class="job-description">
+              Extends strategies for algorithmic fairness from the machine
+              learning community to a resource-allocation optimization setting.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Generative Models and Sparse Coding</h4>
+              <p class="institution-info">
+                Department of Mathematics, Pomona College
+              </p>
+              <p class="company-info">2014</p>
+            </div>
+            <p class="job-description">
+              Formalizes connections between the
+              <em>Boltzmann Machine</em> Distribution and unsupervised learning
+              based on sparse coding.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Anomaly Detection Using Dictionary Learning
+              </h4>
+              <p class="institution-info">
+                University of Minnesota, Minneapolis
+              </p>
+              <p class="company-info">2013</p>
+            </div>
+            <p class="job-description">
+              Explores unsupervised anomaly detection in video data using
+              dictionary learning and sparse coding. An NSF-funded REU.
+            </p>
+            <p class="job-description">
+              Awarded "
+              <span class="font-semibold">Outstanding Presentation Award</span>"
+              by the Joint Mathematics Meeting, 2014: top 15% of undergraduate
+              groups at JMM.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
