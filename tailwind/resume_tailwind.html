@@ -77,11 +77,21 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Custom styles for enhanced readability and aesthetics */
+      :root {
+        --color-primary: #1f2937;
+        --color-secondary: #353940;
+        --color-highlight: #2563eb;
+        --color-text: #374151;
+        --color-background: #f9fafb;
+        --color-gray-600: #4b5563;
+      }
+
       body {
         line-height: 1.4;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-          sans-serif; /* Helvetica-like */
+          sans-serif;
+        background-color: var(--color-background);
+        color: var(--color-text);
       }
 
       .section-title {
@@ -91,64 +101,47 @@
         border-bottom-width: 1px;
         padding-bottom: 0rem;
         margin-bottom: 0.1rem;
-        color: #1f2937;
+        color: var(--color-primary);
         letter-spacing: 0.02em;
       }
 
       .job-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
       }
 
       .date-info {
-        font-size: 0.75rem; /* Smaller company info */
+        font-size: 0.75rem;
         font-style: italic;
-        color: #505560; /* Gray-500 */
+        color: var(--color-secondary);
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.2rem;
       }
 
       .job-description {
-        margin-top: 0.05rem; /* Reduced from 0.1rem */
+        margin-top: 0.05rem;
         font-size: 0.9rem;
-        color: #374151; /* Gray-700 */
-        margin-left: 0.5rem; /* Add indent for descriptions */
+        color: var(--color-text);
+        margin-left: 0.5rem;
       }
 
-      /* Increased paragraph spacing, tighter line height */
       .experience-item p {
-        margin-bottom: 0.4rem; /* Reduced from 0.5rem to decrease vertical spacing */
-        line-height: 1.2; /* Tighter line height */
-      }
-
-      .tool-list {
-        font-size: 0.85rem;
-      }
-
-      .tool-list li {
-        display: inline-block; /* Make them inline */
-        margin-right: 0.5em; /* Space between items */
-      }
-
-      .tool-list li:not(:last-child)::after {
-        content: "•"; /* Bullet point separator */
-        margin-left: 0.5em;
-        color: #9ca3af; /* Gray-400 */
+        margin-bottom: 0.4rem;
+        line-height: 1.2;
       }
 
       .hover-underline:hover {
         text-decoration: underline;
-        color: #2563eb; /* Blue-600 */
+        color: var(--color-highlight);
       }
 
       .font-semibold {
         font-weight: 500;
       }
 
-      /* Smaller sections */
       .concise-section .section-title {
-        font-size: 1.3rem; /* Increased from 1.2rem */
+        font-size: 1.3rem;
         margin-bottom: 0.2rem;
       }
 
@@ -164,7 +157,6 @@
         font-size: 0.8rem;
       }
 
-      /* Modified job-header to control alignment */
       .job-header {
         display: flex;
         justify-content: space-between;
@@ -172,104 +164,84 @@
       }
 
       .job-header .job-title {
-        flex-grow: 0; /* Change from 1 to 0 to prevent title from expanding */
-        margin-right: 0.5rem; /* Some space between title and institution */
+        flex-grow: 0;
+        margin-right: 0.5rem;
       }
 
       .job-header .date-info {
-        text-align: right; /* Right-align the dates */
-        flex-shrink: 0; /* Prevent date from shrinking */
+        text-align: right;
+        flex-shrink: 0;
       }
 
-      /* Style for institution/major info */
       .institution-info {
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-style: italic;
-        color: #505560;
-        flex-grow: 1; /* Allow institution info to take up available space */
+        color: var(--color-secondary);
+        flex-grow: 1;
       }
 
-      /* Reduced section spacing */
       section {
-        margin-bottom: 0.75rem; /* Reduced from 1rem */
+        margin-bottom: 0.75rem;
       }
 
-      /* Space between experience items */
       .space-y-3 > * + * {
-        margin-top: 0.6rem; /* Reduced from 0.75rem */
+        margin-top: 0.6rem;
       }
 
-      /* Further reduce spacing for concise sections */
       .concise-section .space-y-3 > * + * {
-        margin-top: 0.05rem; /* Reduced from 0.15rem - almost no spacing */
+        margin-top: 0.05rem;
       }
 
-      /* Reduce job description spacing in concise sections */
       .concise-section .job-description {
-        margin-top: 0; /* Removed margin completely */
-        margin-bottom: 0.05rem; /* Reduced from 0.1rem */
+        margin-top: 0;
+        margin-bottom: 0.05rem;
       }
 
-      /* Reduce spacing between job header and description */
       .concise-section .job-header {
-        margin-bottom: 0.01rem; /* Minimal margin */
+        margin-bottom: 0.01rem;
       }
 
-      /* Tighter line height for concise sections */
       .concise-section .experience-item p {
-        margin-bottom: 0.08rem; /* Reduced from 0.15rem */
-        line-height: 0.95; /* Even tighter than minimum */
+        margin-bottom: 0.08rem;
+        line-height: 0.95;
       }
 
-      /* Reduce section title bottom margin in concise sections */
       .concise-section .section-title {
-        margin-bottom: 0.05rem; /* Reduced from 0.1rem */
+        margin-bottom: 0.05rem;
       }
 
-      /* Reduce spacing between sections in concise areas */
       .concise-section.mb-1 {
-        margin-bottom: 0.1rem; /* Reduced from 0.75rem */
+        margin-bottom: 0.1rem;
       }
 
-      /* Tool list grid layout */
       .tool-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
-        gap: 0.25rem; /* Reduced gap between grid items */
+        gap: 0.25rem;
         margin-top: 0.5rem;
       }
 
       .tool-grid-item {
         font-size: 0.85rem;
-        white-space: nowrap; /* Prevent wrapping */
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
 
       .tool-name {
-        font-size: 0.75rem; /* Smaller than before */
+        font-size: 0.75rem;
         font-style: italic;
       }
 
-      /* Style for bullet separators between tools */
-      .tool-separator::after {
-        content: "•";
-        color: #9ca3af; /* Gray-400 */
-        margin: 0 0.15rem; /* Reduced spacing around bullets */
-      }
-
-      /* Optimization section needs smaller text */
       .tool-grid-item:nth-child(4) {
-        font-size: 0.8rem; /* Smaller category name for Optimization */
+        font-size: 0.8rem;
       }
 
-      /* Communication section needs smaller text */
       .tool-grid-item:nth-child(5) {
-        font-size: 0.8rem; /* Smaller category name for Communication */
+        font-size: 0.8rem;
       }
 
-      /* Simplified header alignment */
       .header-container {
         display: flex;
         flex-direction: column;
@@ -279,16 +251,16 @@
         .header-container {
           flex-direction: row;
           justify-content: space-between;
-          align-items: center; /* Center align items vertically */
+          align-items: center;
         }
       }
 
       .name-title {
-        margin-bottom: 0; /* Remove any bottom margin */
+        margin-bottom: 0;
       }
 
       .name-title h1 {
-        margin-bottom: 0.25rem; /* Small space between name and subtitle */
+        margin-bottom: 0.25rem;
       }
 
       .contact-info {
@@ -298,11 +270,10 @@
       }
 
       .contact-info p {
-        margin: 0.25rem 0; /* Equal spacing between contact items */
+        margin: 0.25rem 0;
         line-height: 1.4;
       }
 
-      /* Ensure mobile alignment */
       @media (max-width: 767px) {
         .name-title,
         .contact-info {
@@ -311,10 +282,9 @@
         }
       }
 
-      /* Style for summary points */
       .summary-point {
         font-weight: 600;
-        color: #4b5563; /* Gray-600 */
+        color: var(--color-gray-600);
       }
     </style>
   </head>
