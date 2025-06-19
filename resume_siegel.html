@@ -1,500 +1,608 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zach Siegel - Resume</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="favicons/favicon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="favicons/favicon-160.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="favicons/favicon-64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16.png"
+    />
+    <link rel="apple-touch-icon" href="favicons/favicon-57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/favicon-114.png"
+    />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/favicon-144.png"
+    />
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/favicon-120.png"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/favicon-180.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicons/favicon-144.png" />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-primary: #1f2937;
+        --color-secondary: #353940;
+        --color-highlight: #2563eb;
+        --color-text: #374151;
+        --color-background: #f9fafb;
+        --color-gray-600: #4b5563;
+      }
 
-<head>
-	<title>Zach Siegel - Resume</title>
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="The Curriculum Vitae of Zach Siegel." />
-	<meta charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-	<link rel="shortcut icon" href="favicons/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="favicons/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
-	<link rel="apple-touch-icon" href="favicons/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicons/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="favicons/favicon-144.png">
-	<meta name="msapplication-config" content="browserconfig.xml">
-</head>
+      body {
+        line-height: 1.4;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          sans-serif;
+        background-color: var(--color-background);
+        color: var(--color-text);
+      }
 
-<body id="top">
-	<div id="cv">
-		<div class="mainDetails">
-			<!-- <div id="headshot">
-				<img src="jaipur_headshot.JPG" alt="Zach Siegel" />
-			</div> -->
-			<div id="name">
-				<h1 style="margin-bottom : 1px;">Zach Siegel</h1>
-				<h2>Data Science | Software Engineering</h2>
-			</div>
-			<div id="contactDetails">
-				<ul>
-					<li><a href="mailto:zachary.edmund.siegel@gmail.com"
-							target="_blank">zachary.edmund.siegel@gmail.com</a></li>
-					<li><a href="https://zsiegel92.github.io">zsiegel92.github.io</a></li>
-					<li><a href="https://www.linkedin.com/in/zach-edmund-siegel">linkedin.com/in/zach-edmund-siegel</a>
-					</li>
-					<!-- <li><a href="https://www.grouptherenow.com">grouptherenow.com</a></li> -->
-					<li>(914) 400 3675</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<div id="mainArea">
-			<section style="border-top: 0px; margin-top: 0px;">
-				<article>
-					<div class="sectionContent blurb">
-						<p>
-							Passionate about optimization, automation, and statistics-driven
-							decision-making.</p>
-						<p>Highly proficient with a variety of full-stack application development
-							tools that bring analysis to life.
-						</p>
-						<!-- <p>Eager to grow; working to continue to have a high impact in increasingly complex
-							environments.</p> -->
-					</div>
-				</article>
-				<div class="clear"></div>
-			</section>
+      .section-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-style: italic;
+        border-bottom-width: 1px;
+        padding-bottom: 0rem;
+        margin-bottom: 0.1rem;
+        color: var(--color-primary);
+        letter-spacing: 0.02em;
+      }
 
-			<section>
-				<div class="sectionTitle">
-					<h1>Professional Experience</h1>
-				</div>
-				<div class="sectionContent">
+      .job-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
 
-					<article>
-						<h2>Data Engineer</h2>
-						<span class="subDetails">Current AI | Walleye Capital</span>
-						<span class="subDetails date">March 2024 - Present</span>
-						<!-- <p>Launched a widely-used internal
-							website, onboarded and trained contributors. Developed a full-stack web platform for
-							customized BI analyses; pipeline for long-running
-							bioinformatics calculations; IP-related data mining; scheduling automation and
-							visualization; automated handoffs; cross-platform syncing; integrations with lab robots;
-							primate immunogenicity
-							forecasting.
-						</p> -->
-						<p>
-							Built and maintained ETL pipelines for scraped and purchased domain-specific data. Integrated data into application features.
-						</p>
-						<p>
-							Built LLM-generated knowledge graph to support RAG functionality.
-						</p>
-						<ul class="jobSkillsUl">
-						</ul>
-					</article>
+      .date-info {
+        font-size: 0.75rem;
+        font-style: italic;
+        color: var(--color-secondary);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.2rem;
+      }
 
-					<article>
-						<h2>Software Engineer & Data Scientist</h2>
-						<span class="subDetails">Capsida Biotherapeutics, Inc.</span>
-						<span class="subDetails date">January 2022 - March 2024</span>
-						<p>
-							Led the development of a widely-used internal website running on AWS using React and Django.
-							Created and maintained testing suite and documentation. Onboarded cross-functional
-							contributors and socialized adoption.
-						</p>
-						<p>
-							Created and maintained data "plumbing" automations that connected platforms and services,
-							including: lab information database, project management software, networked lab instruments,
-							and internal website server. Built a QR-based inventory update system to reduce cycle
-							counting need. Fully automated several lab instrument data ingest operations.
-						</p>
-						<p>
-							Created a primate immunogenicity forecasting and decision-support tool using stochastic
-							modeling to anticipate spontaneous interruptions to animal availability (a widespread
-							challenge in biotech). Fully-automated analysis pipeline makes increasingly precise
-							recommendations available to decision-makers as new assay results are recorded in lab
-							information
-							database.
-						</p>
-						<p>
-							Deployed software to support: scheduling automation and
-							visualization; highly customized BI analyses; a pipeline for long-running
-							bioinformatics calculations; IP-related data mining; automated "handoffs" across platforms;
-							integrations with lab robots.
-						</p>
-						<ul class="jobSkillsUl">
-							<li>React</li>
-							<li>Django</li>
-							<li>Plotly Dash</li>
-							<li>AWS</li>
-						</ul>
-					</article>
+      .job-description {
+        margin-top: 0.05rem;
+        font-size: 0.9rem;
+        color: var(--color-text);
+        margin-left: 0.5rem;
+      }
 
-					<article>
-						<h2>MBA Teaching Assistant</h2>
-						<span class="subDetails">Anderson School of Management, UCLA</span>
-						<span class="subDetails date">2020 - 2021</span>
-						<p>Taught "Data and Analytics" to students in the full-time and fully-employed MBA programs as
-							part of PhD teaching requirements.
-						</p>
-						<p>
-							Built a git deployment pipeline for learning material using JupyterHub. MBA
-							students clicked a "magic link" to access cloud-provisioned, SSO-enabled compute
-							environments. Prepared interactive notebook-based Python and R material.
-						</p>
-						<ul class="jobSkillsUl">
-							<li>Jupyter</li>
-							<li>R</li>
-							<li>Pyomo</li>
-						</ul>
-					</article>
+      .experience-item p {
+        margin-bottom: 0.4rem;
+        line-height: 1.2;
+      }
 
-					<!-- 
-					<article>
-						<h2>Mathematics Tutor</h2>
-						<span class="subDetails">Tutor Me LA</span>
-						<span class="subDetails date">2016 - 2019</span>
-						<p>Provided private tutoring for undergraduate UCLA students as part of the UCLA Guardian
-							Scholars scholarship.</p>
-					</article>
-					<article>
-						<h2>Computer Science Instructor</h2>
-						<span class="subDetails">PlanetBravo</span>
-						<span class="subDetails date">2018</span>
-						<p>Taught introductory and intermediate computer science courses for young children.</p>
-					</article>
+      .hover-underline:hover {
+        text-decoration: underline;
+        color: var(--color-highlight);
+      }
 
-					<article>
-						<h2>Tutor for Incarcerated Youth</h2>
-						<span class="subDetails">M&I Education Consulting</span>
-						<span class="subDetails date">2015 - 2018</span>
-						<p>Provided Math and CS tutoring for incarcerated and foster youth in El Monte and Long Beach,
-							CA.</p>
-					</article> -->
+      .font-semibold {
+        font-weight: 500;
+      }
 
-				</div>
-				<div class="clear"></div>
-			</section>
+      .concise-section .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.2rem;
+      }
 
-			<section>
+      .concise-section .job-title {
+        font-size: 0.9rem;
+      }
 
-				<div class="sectionTitle">
-					<h1>Freelance Software Development</h1>
-				</div>
-				<div class="sectionContent">
+      .concise-section .institution-info {
+        font-size: 0.85rem;
+      }
 
-					<article>
-						<h2>Automated Scheduling</h2>
-						<span class="subDetails">Sinai Temple</span>
-						<span class="subDetails date">2018, 2019</span>
-						<p>
-							Automated and optimized scheduling Bar/Bar Mitzvah dates for ~130 students via mixed-integer
-							linear programming.
-						</p>
-						<ul class="jobSkillsUl">
-							<li>Pyomo</li>
-							<li>COIN-OR</li>
-							<li>Gurobi</li>
-						</ul>
-					</article>
+      .concise-section .date-info {
+        font-size: 0.7rem;
+      }
 
-					<article>
-						<h2>Carpool Assignment Optimization</h2>
-						<span class="subDetails">GroupThere</span>
-						<span class="subDetails date">2017 - 2020</span>
-						<p>Launched a carpool optimization tool at grouptherenow.com. Minimizes total drive-time sum
-							across groups
-							of 2-100. Configured for organizations.</p>
-						<ul class="jobSkillsUl">
-							<li>Angular</li>
-							<li>Flask</li>
-							<li>Heroku</li>
-							<li>COIN-OR</li>
-							<li>LaTeX</li>
-						</ul>
-					</article>
+      .concise-section .job-description {
+        font-size: 0.8rem;
+      }
 
-					<article>
-						<h2>Community Safety Intervention Modeling</h2>
-						<span class="subDetails">LA Community Action Network</span>
-						<span class="subDetails date">2017</span>
-						<p>Re-implemented LAPD’s “hotspot”-generation algorithm. Compared hotspots to historical arrest,
-							citation, and crime report data from the City of Los Angeles. Contributed results the
-							community-generated report "Predictive Policing in Los Angeles".
-						</p>
-						<ul class="jobSkillsUl">
-							<li>LaTeX</li>
-							<li>Python</li>
-							<li>GCP</li>
-						</ul>
-					</article>
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
 
-					<article>
-						<h2>Supply Chain Forecasting, Automation, and Optimization</h2>
-						<span class="subDetails">FactoryOfEverything</span>
-						<span class="subDetails date">2016 - 2017</span>
-						<p>Developed a model for purchasing, production, shipping, and holding over a
-							factory-warehouse-retail system. Forecasting using classical signal processing, regression,
-							and machine learning. Implemented MVP in MATLAB.
-						</p>
-						<ul class="jobSkillsUl">
-							<li>MATLAB</li>
-							<li>LaTeX</li>
-							<li>COIN-OR</li>
-						</ul>
-					</article>
-				</div>
-				<div class="clear"></div>
-			</section>
+      .job-header .job-title {
+        flex-grow: 0;
+        margin-right: 0.5rem;
+      }
 
+      .job-header .date-info {
+        text-align: right;
+        flex-shrink: 0;
+      }
 
-			<section>
-				<div class="sectionTitle">
-					<h1>Education</h1>
-				</div>
-				<div class="sectionContent">
-					<article>
-						<h2>University of California, Los Angeles</h2>
-						<span class="subDetails">MS - Operations Management. <emph style="font-style: normal;">GPA 3.94
-							</emph></span>
-						<span class="subDetails date">2019-2021</span>
+      .institution-info {
+        font-size: 1rem;
+        font-style: italic;
+        color: var(--color-secondary);
+        flex-grow: 1;
+      }
 
-					</article>
-					<article>
-						<h2>Pomona College</h2>
-						<span class="subDetails subSubDetails">BA - Mathematics, Computer Science minor. <emph
-								style="font-style: normal;">GPA 3.63</emph>
-						</span>
-						<span class="subDetails date">2010-2014</span>
-						<p>
-							Awarded "<span class="inlineAwardName">Llewellyn Bixby Mathematics Prize</span>," 2014: to
-							the student with highest achievement in the Mathematics department.
-						</p>
-					</article>
-					<!-- <article>
-						<h2>Indian Institute of Technology, Kanpur</h2>
-						<span class="subDetails date">Spring 2013</span>
-						<p class="subDetails">Mathematics Department.</p>
-					</article> -->
-				</div>
-				<div class="clear"></div>
-			</section>
+      section {
+        margin-bottom: 0.75rem;
+      }
 
+      .space-y-3 > * + * {
+        margin-top: 0.6rem;
+      }
 
-			<section>
-				<div class="sectionTitle">
-					<h1>Research</h1>
-				</div>
-				<div class="sectionContent" style="font-size: 0.9em;">
-					<article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2><em>Pandemic Mitigation Optimization</em></h2>
-						<span class="subDetails subSubDetails">Anderson School of Management, UCLA</span>
-						<span class="subDetails date">2021</span>
-						<p class="researchDescription">Optimizes decisions that affect compartment flow parameters in
-							discrete-time SIRD disease
-							progression model.
-						</p>
-					</article>
-					<article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2><em>Fairness, Efficiency, and Feature-Awareness</em></h2>
-						<span class="subDetails subSubDetails">Anderson School of Management, UCLA</span>
-						<span class="subDetails date">2020</span>
-						<p class="researchDescription">Extends strategies for algorithmic fairness from the machine
-							learning community to a
-							resource-allocation optimization setting.
-						</p>
-					</article>
-					<article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2>Generative Models and Sparse Coding</h2>
-						<span class="subDetails subSubDetails">Department of Mathematics, Pomona College</span>
-						<span class="subDetails date">2014</span>
-						<p class="researchDescription">Formalizes connections between the <em>Boltzmann Machine</em>
-							Distribution and unsupervised
-							learning based on sparse coding.
-						</p>
-					</article>
-					<article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2>Anomaly Detection Using Dictionary Learning</h2>
-						<span class="subDetails subSubDetails">University of Minnesota, Minneapolis</span>
-						<span class="subDetails date">2013</span>
-						<p class="researchDescription">Explores unsupervised anomaly detection in video data using
-							dictionary
-							learning and sparse coding. An
-							NSF-funded REU.
-						</p>
-						<p>
-							Awarded "<span class="inlineAwardName">Outstanding
-								Presentation
-								Award</span>" by the Joint Mathematics Meeting, 2014: top 15% of undergraduate groups at
-							JMM.
-						</p>
-					</article>
-					<!-- <article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2>Aquatic Insect Populations' Response To Time-Varying Reproductive Rates</h2>
-						<span class="subDetails subSubDetails">Oregon State University</span>
-						<span class="subDetails date">2012</span>
-						<p class="researchDescription">Modeled insect populations in MATLAB using partial differential
-							equations. An NSF-funded REU.
-						</p>
-					</article> -->
-					<!-- <article style="margin-bottom: 0px; padding-bottom:0px; margin-top: 0px;">
-						<h2>Zero-Sum Flows of the Linear Lattice</h2>
-						<span class="subDetails subSubDetails">Department of Mathematics, Pomona College</span>
-						<span class="subDetails date">2012</span>
-						<p class="researchDescription">Proved conditions for bounds on network flows in a generalization
-							of the boolean lattice
-						</p>
-					</article> -->
-				</div>
-				<div class="clear"></div>
-			</section>
+      .concise-section .space-y-3 > * + * {
+        margin-top: 0.05rem;
+      }
 
+      .concise-section .job-description {
+        margin-top: 0;
+        margin-bottom: 0.05rem;
+      }
 
+      .concise-section .job-header {
+        margin-bottom: 0.01rem;
+      }
 
+      .concise-section .experience-item p {
+        margin-bottom: 0.08rem;
+        line-height: 0.95;
+      }
 
-			<section class="favoriteToolsSection">
-				<div class="sectionTitle">
-					<h1 style="display: inline-block;">Favorite Tools</h1>
-					<span class="skillType" style="display: inline-block; font-size: 0.75em; margin-left: 1em;">
-						(﹡=expert)
-					</span>
-				</div>
-				<div class="sectionContent">
-					<ul class="keySkills">
-						<li>
-							<span class="skilltype">Python</span>
-							<span class="skillItem">FastAPI*</span>
-							<span class="skillItem">Django*</span>
-							<span class="skillItem">Flask</span>
-							<span class="skillItem">Plotly</span>
-						</li>
-						<li>
-							<span class="skilltype">JS/TS</span>
-							<span class="skillItem">React*</span>
-							<span class="skillItem">NextJS</span>
-							<span class="skillItem">Angular</span>
-						</li>
-						<li>
-							<span class="skilltype">Data</span>
-							<span class="skillItem">SQL*</span>
-							<span class="skillItem">Pandas</span>
-							<span class="skillItem">Spark</span>
-							<span class="skillItem">Redis</span>
-						</li>
-						<li>
-							<span class="skilltype">Optimization</span>
-							<span class="skillItem">Pyomo*</span>
-							<span class="skillItem">COIN-OR </span>
-							<span class="skillItem">GUROBI</span>
-						</li>
+      .concise-section .section-title {
+        margin-bottom: 0.05rem;
+      }
 
-						<li>
-							<span class="skilltype">Communication</span>
-							<span class="skillItem">LaTeX*</span>
-							<span class="skillItem">Jupyter</span>
-							<span class="skillItem">Markdown</span>
-						</li>
-						<li>
-							<span class="skilltype">Fun</span>
-							<span class="skillItem">Bouldering</span>
-							<span class="skillItem">Sourdough Bread*</span>
-						</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</section>
+      .concise-section.mb-1 {
+        margin-bottom: 0.1rem;
+      }
 
-			<!-- <section>
-				<div class="sectionTitle">
-					<h1>Honors</h1>
-				</div>
-				<div class="sectionContent">
-					<article>
-						<h2>Outstanding Presentation Award</h2>
-						<span class="subDetails subSubDetails">Joint Mathematics Meeting, Baltimore, MD</span>
-						<span class="subDetails date">2014</span>
+      .tool-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 0.25rem;
+        margin-top: 0.5rem;
+      }
 
-						<p class="awardDescription">Awarded to 15% of undergraduate research groups presenting work at
-							JMM. For summer 2013
-							research.
-						</p>
-					</article>
-					<article>
-						<h2>Llewellyn Bixby Mathematics Prize</h2>
-						<span class="subDetails subSubDetails">Department of Mathematics, Pomona College</span>
-						<span class="subDetails date">2012</span>
-						<p class="awardDescription">Awarded annually to the student with highest achievement within the
-							department.
-						</p>
-					</article>
-				</div>
-				<div class="clear"></div>
-			</section> -->
+      .tool-grid-item {
+        font-size: 0.85rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
-		</div>
-	</div>
-	<!-- <button onclick="exportPDF()" style="float:right;display:none" id="downloadbutton">Download</button> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
-	<!-- <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script> -->
-	<!-- 		<script>
-			var localstring = "file:///Users/".toLowerCase();
-			var loc = window.location.href;
-			var button = document.getElementById("downloadbutton");
-			if (loc.toLowerCase().startsWith(localstring)){
-				button.style.display = "block";//Toggle visibility
-			}
-			else {
-				button.style.display = "none";
-			}
-		    function exportPDF () {
-		    	var button = document.getElementById("downloadbutton");
-		    	button.style.display = "none";
-		        // var pdf = new jsPDF('p', 'pt', 'letter');
-		        var pdf = new jsPDF(
-		                            {
-		                             orientation: 'p',
-		                             unit: 'pt',
-		                             format: 'a4',
-		                             putOnlyUsedFonts:true,
-		                             // compress:true
-		                            }
-		                            );
-		        margins = {
-		                    top: 80,
-		                    bottom: 60,
-		                    left: 40,
-		                    width: 522
-		                };
-		        source = document.getElementById("cv");
-		        pdf.html(source, {
-		            callback : function (pdf) {
-		                pdf.save("Resume_Siegel.pdf");
-		            }
-		        });
-		        // pdf.fromHTML(
-		        //             source, // HTML string or DOM elem ref.
-		        //             margins.left, // x coord
-		        //             margins.top, { // y coord
-		        //                 'width': margins.width, // max width of content on PDF
-		        //                 // 'elementHandlers': specialElementHandlers
-		        //             },
+      .tool-name {
+        font-size: 0.75rem;
+        font-style: italic;
+      }
 
-		        //             function (dispose) {
-		        //                 // dispose: object with X, Y of the last line add to the PDF
-		        //                 //          this allow the insertion of new lines after html
-		        //                 pdf.save('Resume_Siegel.pdf');
-		        //             }, margins
-		        //         );
-		    }
-		</script> -->
-</body>
+      .tool-grid-item:nth-child(4) {
+        font-size: 0.8rem;
+      }
 
+      .tool-grid-item:nth-child(5) {
+        font-size: 0.8rem;
+      }
+
+      .header-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 768px) {
+        .header-container {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      .name-title {
+        margin-bottom: 0;
+      }
+
+      .name-title h1 {
+        margin-bottom: 0.25rem;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+
+      .contact-info p {
+        margin: 0.25rem 0;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 767px) {
+        .name-title,
+        .contact-info {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .summary-point {
+        font-weight: 600;
+        color: var(--color-gray-600);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <div
+      class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-2 px-10 py-2"
+    >
+      <!-- Increased padding -->
+      <!-- Header -->
+      <header class="mb-2">
+        <div class="header-container">
+          <div class="header-left">
+            <div class="name-title">
+              <h1 class="text-3xl font-extrabold tracking-tight">
+                Zach Siegel
+              </h1>
+              <h2 class="text-xl text-gray-600">
+                Full-Stack Engineering | Data Science
+              </h2>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="contact-info">
+              <p>
+                <a
+                  class="text-gray-700 hover-underline"
+                  href="mailto:zachary.edmund.siegel@gmail.com"
+                  >zachary.edmund.siegel@gmail.com</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-gray-700 hover-underline"
+                  href="https://zsiegel92.github.io"
+                  >zsiegel92.github.io</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-gray-700 hover-underline"
+                  href="https://www.linkedin.com/in/zach-edmund-siegel"
+                  >linkedin.com/in/zach-edmund-siegel</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-1 text-md italic text-gray-500">
+          I'm a proficient and enthusiastic application builder. I'm passionate
+          about optimization, automation, and statistics-driven decision-making.
+          Opening doors recently unlocked by AI.
+        </p>
+      </header>
+      <!-- Professional Experience -->
+      <section class="mb-0">
+        <!-- Reduced margin -->
+        <h3 class="section-title">Professional Experience</h3>
+        <div class="space-y-3">
+          <!-- Reduced spacing -->
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Full-Stack Data/AI Engineer</h4>
+              <p class="institution-info">Current AI | Walleye Capital</p>
+              <p class="date-info">March 2024 - Present</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point"
+                >Drove product end-to-end, from ETL to UI.</span
+              >
+              Deployed bulk ingestion pipelines for millions of records per day;
+              managed event-handlers for each record to reach users; designed
+              customer-facing features.
+            </p>
+            <p class="job-description">
+              <span class="summary-point"
+                >Grounded generative AI in software best practices.</span
+              >
+              Evaluated and tuned workflows for structured extraction and
+              generative prose. Built a robust
+              <i>named entity resolution</i> service. Combined ranking,
+              chunking, and retrieval strategies to identify and generate
+              content about developing trends in real-time.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Innovated on tooling.</span>
+              Used a custom agentic loop to generate thousands of unique scripts
+              that scrape high-quality structured data (without AI) from
+              different websites each day.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Centered software rigor.</span>
+              Maintained high test coverage for backend and frontend code in
+              Python and Typescript, and extended testing paradigms to evaluate
+              non-deterministic AI features.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Software Engineer &amp; Data Scientist</h4>
+              <p class="institution-info">Capsida Biotherapeutics, Inc.</p>
+              <p class="date-info">January 2022 - March 2024</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point"
+                >Led widely-used internal software platform</span
+              >
+              (AWS+React+Django) providing: customized genomic design tools;
+              long-running bioinformatics pipelines; scheduling automation and
+              visualization; executive BI analyses; automated handoffs across
+              platforms; integrations with lab robots; IP-related data mining.
+              Onboarded cross-functional contributors, maintained testing suite,
+              documented, and socialized tools.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Automated lab data plumbing</span>
+              by connecting platforms including: lab information database
+              (Benchling), project management software (Smartsheet), and
+              networked lab instruments. Built a QR-based inventory update
+              system. Fully automated several lab instrument data ingest
+              operations.
+            </p>
+            <p class="job-description">
+              <span class="summary-point">Developed forecasting models</span>
+              for primate immunogenicity, with a decision-support tool that
+              anticipates spontaneous interruptions to animal availability (a
+              widespread challenge in biotech). Built automated analysis
+              pipeline that delivers increasingly precise recommendations to
+              decision-makers as new assay results are recorded in lab
+              information database. C suite relied on forecasts for (expensive!)
+              contracts.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Teaching Assistant for MBA Program</h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="date-info">2020 - 2021</p>
+            </div>
+            <p class="job-description">
+              <span class="summary-point">Taught</span> "Data and Analytics" to
+              students in the MBA programs as part of PhD track teaching
+              requirements.
+            </p>
+            <p class="job-description">
+              <span class="summary-point"
+                >Created (great) statistics course materials</span
+              >
+              with a JupyterHub/git-based deployment pipeline. Students clicked
+              a "magic link" to access cloud-provisioned, SSO-enabled compute
+              environments.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Freelance Software Development -->
+      <section class="mb-0 concise-section">
+        <h3 class="section-title">Freelance Software Development</h3>
+        <div class="space-y-1">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Automated Scheduling</h4>
+              <p class="institution-info">Sinai Temple</p>
+              <p class="date-info">2018, 2019</p>
+            </div>
+            <p class="job-description">
+              Automated and optimized scheduling Bar/Bar Mitzvah dates for ~130
+              students via mixed-integer linear programming.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Carpool Assignment Optimization</h4>
+              <p class="institution-info">
+                GroupThere - grouptherenow.com (offline)
+              </p>
+              <p class="date-info">2017 - 2020</p>
+            </div>
+            <p class="job-description">
+              Launched a carpool optimization tool for organizations. Minimizes
+              total drive-time sum across groups of 2-100.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Community Safety Intervention Modeling</h4>
+              <p class="institution-info">LA Community Action Network</p>
+              <p class="date-info">2017</p>
+            </div>
+            <p class="job-description">
+              Re-implemented LAPD's "hotspot" generation algorithm. Compared
+              hotspots to historical arrest/citation/crime report data from City
+              of Los Angeles. Contributed results to community-generated report
+              "Predictive Policing in Los Angeles".
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Supply Chain Forecasting, Automation, and Optimization
+              </h4>
+              <p class="institution-info">FactoryOfEverything</p>
+              <p class="date-info">2016 - 2017</p>
+            </div>
+            <p class="job-description">
+              Developed a model for purchasing, production, shipping, and
+              holding over a factory-warehouse-retail system. Forecasting using
+              classical signal processing, regression, and machine learning.
+              Implemented MVP in MATLAB.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="mb-0 concise-section">
+        <h3 class="section-title">Education</h3>
+        <div class="space-y-1">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">University of California, Los Angeles</h4>
+              <p class="institution-info">MS - Operations Research. GPA 3.94</p>
+              <p class="date-info">2019-2021</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Pomona College</h4>
+              <p class="institution-info">
+                BA - Mathematics, Computer Science minor. GPA 3.63
+              </p>
+              <p class="date-info">2010-2014</p>
+            </div>
+            <p class="job-description">
+              Awarded
+              <span class="font-semibold"
+                >&quot;Llewellyn Bixby Mathematics Prize&quot;</span
+              >
+              2014: to the student with highest achievement in the Mathematics
+              dept.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Research -->
+      <section class="mb-0 concise-section">
+        <h3 class="section-title">Research</h3>
+        <div class="space-y-1">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Pandemic Mitigation Optimization</h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="date-info">2021</p>
+            </div>
+            <p class="job-description">
+              Optimizes decisions that affect compartment flow parameters in
+              discrete-time SIRD disease progression model.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Fairness, Efficiency, and Feature-Awareness
+              </h4>
+              <p class="institution-info">
+                Anderson School of Management, UCLA
+              </p>
+              <p class="date-info">2020</p>
+            </div>
+            <p class="job-description">
+              Extends strategies for algorithmic fairness from machine learning
+              community to resource-allocation optimization setting.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Generative Models and Sparse Coding</h4>
+              <p class="institution-info">
+                Department of Mathematics, Pomona College
+              </p>
+              <p class="date-info">2014</p>
+            </div>
+            <p class="job-description">
+              Formalizes connections between
+              <em>Boltzmann Machine</em> Distribution and unsupervised learning
+              via sparse coding.
+            </p>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">
+                Anomaly Detection Using Dictionary Learning
+              </h4>
+              <p class="institution-info">
+                University of Minnesota, Minneapolis
+              </p>
+              <p class="date-info">2013</p>
+            </div>
+            <p class="job-description">
+              Unsupervised anomaly detection in video data using dictionary
+              learning and sparse coding. An NSF-funded REU.
+            </p>
+            <p class="job-description">
+              Awarded
+              <span class="font-semibold"
+                >&quot;Outstanding Presentation Award&quot;</span
+              >
+              at Joint Mathematics Meeting, 2014: top 15% undergraduate groups.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
