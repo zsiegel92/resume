@@ -221,29 +221,27 @@
       .tool-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 0.25rem;
-        margin-top: 0.5rem;
+        gap: 0.05rem 0.15rem;
+        margin-top: 0.1rem;
+        font-size: 0.65rem;
+        color: var(--color-gray-600);
       }
 
       .tool-grid-item {
-        font-size: 0.85rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 1.2;
       }
 
       .tool-name {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
         font-style: italic;
       }
 
-      .tool-grid-item:nth-child(4) {
-        font-size: 0.8rem;
-      }
-
-      .tool-grid-item:nth-child(5) {
-        font-size: 0.8rem;
+      .tool-name {
+        font-size: 0.6rem;
+        font-style: italic;
       }
 
       .header-container {
@@ -337,10 +335,41 @@
           </div>
         </div>
         <p class="mt-1 text-md italic text-gray-500">
-          I'm a proficient and enthusiastic application builder passionate
-          about optimization, automation, and statistics-driven decision-making.
+          I'm a proficient and enthusiastic application builder passionate about
+          optimization, automation, and statistics-driven decision-making.
+          Always eager to employ mathematical programming.
         </p>
       </header>
+      <!-- Education -->
+      <section class="mb-0 concise-section">
+        <h3 class="section-title">Education</h3>
+        <div class="space-y-1">
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">University of California, Los Angeles</h4>
+              <p class="institution-info">MS - Operations Research. GPA 3.94</p>
+              <p class="date-info">2019-2021</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="job-header">
+              <h4 class="job-title">Pomona College</h4>
+              <p class="institution-info">
+                BA - Mathematics, Computer Science minor. GPA 3.63
+              </p>
+              <p class="date-info">2010-2014</p>
+            </div>
+            <p class="job-description">
+              Awarded
+              <span class="font-semibold"
+                >&quot;Llewellyn Bixby Mathematics Prize&quot;</span
+              >
+              2014: to the student with highest achievement in the Mathematics
+              dept.
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- Professional Experience -->
       <section class="mb-0">
         <!-- Reduced margin -->
@@ -365,24 +394,38 @@
               <span class="summary-point"
                 >Grounded generative AI in software best practices.</span
               >
-              Rigorously evaluated and optimized generated content to align to SME preferences with a custom prompt optimization workflow. Built a robust
+              Built team's evaluation infrastructure to align AI-generated
+              content with SME preferences, including a custom prompt
+              optimization framework. Built a robust
               <i>named entity resolution</i> service.
             </p>
             <p class="job-description">
               <span class="summary-point">Innovated on tooling.</span>
-              Used a custom agentic loop to generate thousands of unique configurations
-              to scrape high-quality structured data (without AI) from
-              different websites each day.
+              Used a custom agentic loop to generate thousands of unique
+              configurations to scrape high-quality structured data (without AI)
+              from different websites each day.
             </p>
             <p class="job-description">
               <span class="summary-point">Centered software rigor.</span>
-              Maintained high test coverage for backend and frontend Python and Typescript code, and extended testing paradigms to evaluate
+              Maintained high test coverage for backend and frontend Python and
+              Typescript code, and extended testing paradigms to evaluate
               non-deterministic AI features.
             </p>
             <p class="job-description">
               <span class="summary-point">Won company-wide hackathon.</span>
-              Placed first of 48 teams with a resume-screening platform that aligns to manager preferences via annotations of synthetic data that balances exploration and exploitation and prompt optimization.
+              Placed first of 48 teams with a resume-screening platform that
+              aligns to manager preferences via annotations of synthetic data
+              that balances exploration and exploitation and prompt
+              optimization.
             </p>
+            <div class="tool-grid">
+              <div class="tool-grid-item">Python•Typescript</div>
+              <div class="tool-grid-item">MySQL•BigQuery•S3</div>
+              <div class="tool-grid-item">AI Harness Evals</div>
+              <div class="tool-grid-item">Testing•CI/DevOps•Observability</div>
+              <div class="tool-grid-item">Classification•NER</div>
+              <div class="tool-grid-item">Full-Stack•Data Eng•AI Eng</div>
+            </div>
           </div>
           <div class="experience-item">
             <div class="job-header">
@@ -419,10 +462,17 @@
               information database. C suite relied on forecasts for (expensive!)
               contracts.
             </p>
+            <div class="tool-grid">
+              <div class="tool-grid-item">Python•Javascript</div>
+              <div class="tool-grid-item">Redis•scikit-learn</div>
+              <div class="tool-grid-item">AWS•On-Prem</div>
+            </div>
           </div>
           <div class="experience-item">
             <div class="job-header">
-              <h4 class="job-title">Teaching Assistant for Graduate Students</h4>
+              <h4 class="job-title">
+                Teaching Assistant for Graduate Students
+              </h4>
               <p class="institution-info">
                 Anderson School of Management, UCLA
               </p>
@@ -501,35 +551,10 @@
             </p>
           </div>
         </div>
-      </section>
-      <!-- Education -->
-      <section class="mb-0 concise-section">
-        <h3 class="section-title">Education</h3>
-        <div class="space-y-1">
-          <div class="experience-item">
-            <div class="job-header">
-              <h4 class="job-title">University of California, Los Angeles</h4>
-              <p class="institution-info">MS - Operations Research. GPA 3.94</p>
-              <p class="date-info">2019-2021</p>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="job-header">
-              <h4 class="job-title">Pomona College</h4>
-              <p class="institution-info">
-                BA - Mathematics, Computer Science minor. GPA 3.63
-              </p>
-              <p class="date-info">2010-2014</p>
-            </div>
-            <p class="job-description">
-              Awarded
-              <span class="font-semibold"
-                >&quot;Llewellyn Bixby Mathematics Prize&quot;</span
-              >
-              2014: to the student with highest achievement in the Mathematics
-              dept.
-            </p>
-          </div>
+        <div class="tool-grid">
+          <div class="tool-grid-item">Python•Javascript•MATLAB</div>
+          <div class="tool-grid-item">Flask•Angular</div>
+          <div class="tool-grid-item">Pyomo•COIN-OR•Gurobi</div>
         </div>
       </section>
       <!-- Research -->
