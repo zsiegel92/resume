@@ -2,5 +2,8 @@
   "dependencies": {
     "commander": "^8.3.0",
     "puppeteer": "^24.22.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
   }
 }
